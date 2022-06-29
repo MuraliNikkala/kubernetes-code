@@ -30,5 +30,11 @@ sudo apt-get update
 sudo apt-get install -y kubelet=1.21.1-00 kubeadm=1.21.1-00 kubectl=1.21.1-00 #--allow-change-held-packages
 sudo apt-mark hold kubelet kubeadm kubectl
 
+# kubeadm init
+# kubectl get nodes
+# kubectl get pods 
+# kubectl get ns
+# kubectl get pods --namespace kube-system
+
 # CNI Plugin Installation:
 # kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
